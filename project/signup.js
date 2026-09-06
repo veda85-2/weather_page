@@ -33,7 +33,7 @@ form.addEventListener('submit', async (e)=>{
            console.log(data)
 
 if (data.status === "success") {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 else{
     alert(data.message);

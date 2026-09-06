@@ -113,7 +113,7 @@ window.addEventListener("load", () => {
 
 const logout = document.querySelector('.logout-btn');
 logout.addEventListener('click',()=>{
-    window.location.href = 'login.html'
+    window.location.href = 'index.html'
 })
 
 
