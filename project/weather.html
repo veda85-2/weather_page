@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-page</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="cursor"></div>
+      <nav class="navbar">
+
+        <div class="logo">
+            SkyCast
+        </div>
+
+        <button class="logout-btn">
+            Logout
+        </button>
+
+    </nav>
+    <main>
+       <section class="search-section"> 
+        <h1>What's the weather like?</h1>
+         <p>Search for a city to see its weather.</p> 
+        <div id="search"> 
+          <input type="text" placeholder="Enter city name"> 
+       </div> </section>
+      
+       
+      
+
+      <section class="weather-card"> 
+        <div class="city-info">
+           <p id="date"></p>
+            <h2 id="city-box">Delhi</h2> 
+            <p id="condition"></p> 
+          </div> 
+
+          <div class="temperature"> 
+            <span id="temp-box"></span> 
+            <span> C</span>
+          </div>
+            
+          <div class="weather-details"> 
+          <div> 
+            <span>🌡️</span> 
+                <p>Feels like</p> 
+                <strong id="Feels"></strong>
+          </div> 
+               
+          <div> 
+              <span>💧</span>
+              <p>Humidity</p> 
+              <strong class="humid"></strong>
+          </div>
+
+          <div> 
+              <span>💨</span>
+              <p>Wind</p>
+              <strong  class="wind"></strong>
+            </div>
+          </div>
+
+            </section>
+
+              <section class="forecast">
+                   <h2>3 Day Forecast</h2> 
+                   
+                  <div class="forecast-container"> 
+                    <div class="forecast-card">
+                       <p></p> 
+                       <span></span>
+                        <h3></h3> 
+                        <small></small>
+                       </div> 
+
+                    <div class="forecast-card">
+                         <p></p>
+                          <span></span>
+                           <h3></h3>
+                            <small></small>
+                      </div>
+
+                      <div class="forecast-card"> 
+                            <p></p>
+                             <span></span>
+                              <h3></h3> 
+                              <small></small>
+                       </div> 
+                            </div>
+              </section> 
+        </main>
+
+                        
+  <footer> 
+      <p>Made with rupali❤️</p>
+    </footer>                      
+     
+      
+    <script src="weather.js"></script>
+</body>
+</html>

@@ -6,20 +6,29 @@
 }
 .cursor{
     border-radius: 50px;
-    background-color: rgb(181, 181, 214);
+    background-color: rgb(82, 147, 200);
     border: 1px solid rgb(223, 223, 243) ;
      box-shadow:
+    0 0 5px #00f0ff,
     0 0 10px #00aaff,
-    0 0 30px #00aaff,
-  
-    0 0 100px #00aaff;
-    width: 30px;
-    height: 30px;
+    0 0 30px #07111f,
+    0 0 40px #b3bec4;
+    width: 15px;
+    height: 15px;
     position: fixed;
   z-index: 100;
+   animation: pulseGlow 1.5s infinite ease-in-out;
   
 }
-/* signup page*/
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px #00f0ff, 0 0 15px #00f0ff, 0 0 30px #00f0ff;
+  }
+  50% {
+    box-shadow: 0 0 10px #00f0ff, 0 0 25px #00f0ff, 0 0 50px #00f0ff;
+  }
+}
+
 
 
 .sign-up{
@@ -109,7 +118,7 @@ form button:hover{
     transform: translate(-1px);
 }
 
-/*login page*/
+
 .login{
     width: 100vw;
     height: 100vh;
@@ -154,4 +163,10 @@ h2{
     margin-top: 20px;
     color: #281b1e;
    
+}
+.login-response{
+    
+    color: azure;
+    font-size: 14px;
+    margin-top: 10px;
 }
