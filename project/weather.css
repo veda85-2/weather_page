@@ -226,12 +226,10 @@ footer {
 .search-section h1 {
   font-size: 27px;
 } 
-.search-box {
+#search-box {
     flex-direction: column;
 } 
-.search-box button {
-    padding: 13px;
-}
+
 .weather-card {
     grid-template-columns: 1fr;
      padding: 25px;
