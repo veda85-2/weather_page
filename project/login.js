@@ -41,10 +41,10 @@ if (response.ok) {
 
     message.textContent = "Login successful! 🎉";
     message.style.backgroundColor = "green";
-      message.style.width = "150px";
+      message.style.width = "120px";
         message.style.borderRadius = "20px";
-        message.style.height = "30px";
-        message.style.padding = "50px";
+        message.style.height = "50px";
+       
 
     setTimeout(() => {
         window.location.href = "weather.html";
