@@ -31,28 +31,44 @@
 
 
 
-body{
-     
-      font-family: "Poppins", sans-serif; 
-      min-height: 100vh; 
-      background: linear-gradient(135deg, #07111f, #0d2138, #173b5c);
-    color: #eaf4ff;
-}
-.navbar {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 15px 25px;
+
+
+.main-sec{
+    /* position: relative; */
+    /* overflow: hidden; */
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 18px;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    flex-direction: column-reverse;
+   
+    /* background-size: cover; */
 }
 
+.main-sec::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("./assets/walpaper.png") ;
+    filter: blur(7px);
+
+    z-index: -1;
+}
+
+.box{
+    height: 90%;
+    width: 80%;
+ background-image: url('./assets/walpaper.png');
+ border-radius: 30px;
+ 
+
+}
+.logo{
+    width: 80%;
+    height: 30%;
+}
 .logout-btn {
     padding: 9px 18px;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -100,7 +116,7 @@ main { width: 85%;
     margin-top: 30px;
 }
 .weather-card {
-    background: rgba(255, 255, 255, 0.08);
+    background:  #2E6FA0;
     border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 20px 50px rgba(70, 120, 160, 0.15);
     backdrop-filter: blur(12px);
