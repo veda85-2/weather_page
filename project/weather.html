@@ -1,101 +1,144 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather-page</title>
+    <meta name="theme-color" content="#101b35">
+    <meta name="description" content="Cloudora - Check current weather and a 3-day forecast for your city.">
+
+    <title>Cloudora | Weather Dashboard</title>
+
     <link rel="stylesheet" href="weather.css">
 </head>
+
 <body>
-  <section class="main-sec">
-    <div class="cursor"></div>
-     <div class="logo">
-            Cloudora
-        </div>
-      <div class="box">
-  
-     
-  
-    <main>
-       <section class="search-section"> 
-        <h1>What's the weather like?</h1>
-         <p>Search for a city to see its weather.</p> 
-        <div id="search"> 
-          <input type="text" placeholder="Enter city name"> 
-       </div> </section>
-      
-       
-      
 
-      <section class="weather-card"> 
-        <div class="city-info">
-           <p id="date"></p>
-            <h2 id="city-box">Delhi</h2> 
-            <p id="condition"></p> 
-          </div> 
+    <section class="main-sec">
 
-          <div class="temperature"> 
-            <span id="temp-box"></span> 
-            <span> C</span>
-          </div>
-            
-          <div class="weather-details"> 
-          <div> 
-            <span>🌡️</span> 
-                <p>Feels like</p> 
-                <strong id="Feels"></strong>
-          </div> 
-               
-          <div> 
-              <span>💧</span>
-              <p>Humidity</p> 
-              <strong class="humid"></strong>
-          </div>
+        <!-- Custom cursor
+        <div class="cursor"></div> -->
 
-          <div> 
-              <span>💨</span>
-              <p>Wind</p>
-              <strong  class="wind"></strong>
-            </div>
-          </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">Cloudora</div>
+            <p class="header-tagline">Weather, beautifully clear.</p>
+        </header>
 
-            </section>
+        <div class="box">
 
-              <section class="forecast">
-                   <h2>3 Day Forecast</h2> 
-                   
-                  <div class="forecast-container"> 
-                    <div class="forecast-card">
-                       <p></p> 
-                       <span></span>
-                        <h3></h3> 
-                        <small></small>
-                       </div> 
+            <main>
 
-                    <div class="forecast-card">
-                         <p></p>
-                          <span></span>
-                           <h3></h3>
-                            <small></small>
-                      </div>
+                <!-- Search section -->
+                <section class="search-section">
 
-                      <div class="forecast-card"> 
+                    <p class="eyebrow">YOUR PERSONAL WEATHER SPACE</p>
+
+                    <h1>What's the weather like?</h1>
+
+                    <p>Search for a city to see what's happening outside.</p>
+
+                    <form id="search">
+                        <input
+                            type="text"
+                            id="city-input"
+                            placeholder="Enter city name..."
+                            aria-label="Enter city name"
+                            autocomplete="off"
+                        >
+
+                      
+                    </form>
+
+                </section>
+
+
+                <!-- Current weather -->
+                <section class="weather-card" aria-label="Current weather">
+
+                    <div class="city-info">
+                        <p id="date"></p>
+                        <h2 id="city-box">Delhi</h2>
+                        <p id="condition"></p>
+                    </div>
+
+                    <div class="temperature">
+                        <span id="temp-box">--</span>
+                        <span>°C</span>
+                    </div>
+
+                    <div class="weather-details">
+
+                        <div class="detail-item">
+                            <span>🌡️</span>
+                            <p>Feels like</p>
+                            <strong id="Feels">--</strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>💧</span>
+                            <p>Humidity</p>
+                            <strong class="humid">--</strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>💨</span>
+                            <p>Wind</p>
+                            <strong class="wind">--</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Forecast -->
+                <section class="forecast">
+
+                    <div class="forecast-heading">
+                        <h2>3 Day Forecast</h2>
+                        <p>Coming days at a glance</p>
+                    </div>
+
+                    <div class="forecast-container">
+
+                        <div class="forecast-card">
                             <p></p>
-                             <span></span>
-                              <h3></h3> 
-                              <small></small>
-                       </div> 
-                            </div>
-              </section> 
-        </main>
-</div>
-                        
-  <footer> 
-      <p>Made by rupali❤️</p>
-    </footer>                      
-     
-      
-    <script src="weather.js"></script>
+                            <span></span>
+                            <h3></h3>
+                            <small></small>
+                        </div>
+
+                        <div class="forecast-card">
+                            <p></p>
+                            <span></span>
+                            <h3></h3>
+                            <small></small>
+                        </div>
+
+                        <div class="forecast-card">
+                            <p></p>
+                            <span></span>
+                            <h3></h3>
+                            <small></small>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made by Rupali ❤️</p>
+        </footer>
+
     </section>
+
+    <script src="weather.js"></script>
+
 </body>
 </html>
